@@ -9,7 +9,19 @@
         }
         .gin{
             text-align: center;
+            background-color: rgb(24, 155, 111);
+
         }
+
+        .link{
+             background-color: aqua;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+
+
+            }
+
         h2{
             background-color: aquamarine;
             /* font: 2em bolder; */
@@ -18,6 +30,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-evenly;
+            background-color: cyan;
             
         }
        
@@ -43,16 +56,17 @@
 <body>
     <ul>
         <nav>
+            <div class="link">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../pages/product.html">Product</a></li>
             <li><a href="contact.html">contact</a></li>
             <li><a href="../pages/about.html">About</a></li>
             <li><a href="../pages/signup.html">Signup</a></li>
             <li><a href="../pages/login.html">Login</a></li>
-
-        
+            </div>
         </nav>
     </ul>
+
      <div class="gin"><img src="../images/gin.jpg" alt="" width="500px" height="300px"></div>
 
      <h1>OUR RAW FOOD PRODUCT</h1>
@@ -109,11 +123,9 @@
         requires garden eggs, onions, tomatoes, red bell pepper, scotch bonnet pepper, garlic, ginger, and red palm oil.
     
     </div>
-
-</div>
-
-    <h2>NEWSLETTERS</h2>
-    <div>
+  </div>
+<div>
+        <h2>NEWSLETTERS</h2>
         <form action="">
             <div>
                 <label for="">Name</label>
@@ -123,11 +135,12 @@
             <label for="">Email</label>
           <input type="email" name="Your Email" id="" placeholder="Email">
            
-            </div>
+        </div>
             <div>
                 <label for="">Password</label>
                 <input type="password" name="Your Password" id="" placeholder="password">
             </div>
+            
              <div>
              <label for="">Date Of Birth</label>
              <input type="date" name="" id="">
