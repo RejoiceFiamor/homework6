@@ -27,3 +27,4 @@ function loadMore(){
 }
 let leann = document.getElementById("leann");
 leann.addEventListener("click", loadMore);
+
