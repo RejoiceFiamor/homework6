@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <style>
+        p{
+            text-align: center;
+
+        }
+        #ground{
+            background-color: brown;
+        }
         .link{
             background-color:aqua ;
             display: flex;
@@ -26,6 +33,18 @@
             background-color: antiquewhite;
         
         }
+        h1{
+            text-align: center;
+            
+        }
+
+        .dddd{
+            border: 6px solid navajowhite;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
     
         .veg{
             text-align: center;
@@ -44,7 +63,14 @@
         .cabbage{
             text-align: center;
         }
+        #learn{display: none;
+        }
+
+        .line{
+            text-align: center;
+            
         
+        }
 
      </style>
      <link rel="stylesheet" href="src/style.css">
@@ -59,8 +85,9 @@
         
     </script>
    
-    <ul>
+   <div id="ground">
         <nav>
+            <ul>
             <div class="link">
             <li><a href="index.html">Home</a></li>
             <li><a href="../homework6/pages/product.html">Product</a></li>
@@ -69,32 +96,66 @@
             <li><a href="../homework6/pages/signup.html">Signup</a></li>
             <li><a href="pages/login.html">Login</a></li>
             </div>
+            </ul>
         </nav>
-     </ul>
-   <h1>Tast The Goodness Of Africa</h1>
+    
+    <p id="African"> <b>Taste The Raw Goodness Of African</b></p>
+         
    <div class="home">
     <div class="veg">
+<<<<<<< HEAD
         <img src="images/veg.jpg" alt="width 300px" height="400px"></div>
     African food is organic plant-based with little meat, and fish often added for flavour.
+=======
+        <img src="images/veg.jpg" alt="width 300px" height="400px">
+    </div>
+    <button id="display"> <a href="pages/product.html">Explore our products</a></button>
+     
+    <p> African food is organic plant-based with little meat, and fish often added for flavour.
+>>>>>>> 9b06314b1472acfab21d769626a4e95c98b73310
     Traditional African dishes typically have fish, meat, starchy foods, and a wide variety of herbs and spices.
     Many African cuisines use a combination of locally available cereal grains, fruits, vegetables, meat, and milk products.
     Popular African foods include palm oil, rice, cassava, yams, groundnuts, beans, coffee, and coconut.
     African foods are unrefined natural foods, including whole grains, legumes, roots and tubers, 
       and a variety of fruits, seeds, nuts, and vegetables
+    </p>
+</div>
 
-      <h2>here are some fresh okro</h2>
-   
-      <div class="okro"><img src="images/okro.jpg" alt="" width="500px" height="400px"></div>
+    <h1 id="Goodness">Browse Through The African Goodness</h1>
+
+   <div class="dddd">
+      <div class="okro">
+        <img id="okro" src="images/okro.jpg" alt="" width="500px" height="400px"></div>
     
       <h3>check here for some fresh vegetables</h3>
-      <div class="vege"><img src="images/vege.jpg" alt="" width=" 500px" height="400px"></div>
-      <h2>This is the tast of Africa Goodness</h2>
-      <div class="vege2"><img src="images/vege2.jpg" alt="" width="500px" height="400px"></div>
-      <h2>fresh cabbage</h2>
-      <div class="cabbage"><img src="images/cabbage.jpg" alt="" width="500px" height="500px"></div>
-    </div>
+      <div class="vege">
+        <img id="vegetables" src="images/vege.jpg" alt="" width=" 500px" height="400px"></div>
+      
+      <div class="vege2">
+        <img id="vege" src="images/vege2.jpg" alt="" width="500px" height="400px"></div>
     
+      <div class="cabbage">
+        <img id="veges" src="images/cabbage.jpg" alt="" width="500px" height="500px"></div>
+    </div>
+    <!-- Another set of images added -->
+   
+    <div id="learn" class="dddd"  >
+        <div class="okro">
+          <img id="okro" src="images/okro.jpg" alt="" width="500px" height="400px"></div>
+      
+        <h3>check here for some fresh vegetables</h3>
+        <div class="vege">
+          <img id="vegetables" src="images/vege.jpg" alt="" width=" 500px" height="400px"></div>
+        
+        <div class="vege2">
+          <img id="vege" src="images/vege2.jpg" alt="" width="500px" height="400px"></div>
+      
+        <div class="cabbage">
+          <img id="veges" src="images/cabbage.jpg" alt="" width="500px" height="500px"></div>
+      </div>
+      <button id="leann">Click to load </button>
     <div class="footer">
+
     <h2>NEWSLETTERS</h2>
     
     <div>
@@ -112,6 +173,10 @@
 <div><i class="fa-brands fa-facebook"></i></div>
     </footer>
 </div>
+</div>
+
+
+<script src="src/index.js"></script>
     
 </body>
 </html>
