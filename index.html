@@ -1,194 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <style>
-       .dddd{
-        padding: 3%
-       }
-        .link{
-            background-color:aqua ;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            
-        }
+      .dddd {
+        padding: 3%;
+      }
+      .link {
+        background-color: aqua;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
 
-        body{
-            background-color: bisque;
-        }
+      body {
+        background-color: bisque;
+      }
 
-        .big-div{
-            
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            text-align: center;
-            position: relative;
+      .big-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        /* position: relative; */
+      }
 
-            
-         }
+      .home1 {
+        text-align: center;
+        margin: 0 auto;
+        border: 6px solid black;
+        width: 400px;
+        height: 400px;
+        padding: 5%;
+        background-color: cadetblue;
+      }
 
-         .home1{
-            
-            text-align: center;
-            border: 6px solid black;
-            width: 400px;
-            height: 400px;
-            padding: 5%;
-            background-color: cadetblue;
+      .images {
+        border: 6px solid black;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap;
+        justify-content: space-evenly; */
+        width: 300px;
+        height: 300px;
+        padding: 2%;
+        background-color: cadetblue;
+        display: flex;
+        /* position: relative; */
+        line-height: 25pt;
+        font-weight: 300;
+        padding: 20pt 30pt;
+        gap: 30pt;
+      }
 
-         }
+      .images img {
+        width: 100%;
+      }
 
-          .images{
-            border: 6px solid black ;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            width: 400px;
-            height: 400px;
-            padding: 5%;
-            background-color: cadetblue; display: flex;
-            position: relative;
-            line-height: 25pt;
-            font-weight: 300;
-            padding: 20pt 30pt;
-            gap: 30pt;
-        
-          }
-        
-        .footer{
-            text-align: center;
-            background-color: antiquewhite;
-        }
+      .footer {
+        text-align: center;
+        background-color: antiquewhite;
+      }
 
-        h1{
-            text-align: center;
-        }
-       
-        #learn{display: none;
-        }
+      h1 {
+        text-align: center;
+      }
 
-        .line{
-            text-align: center;
-            
-        
-        }
+      #learn {
+        display: none;
+      }
 
-     </style>
-     <link rel="stylesheet" href="src/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework6</title><script src="https://kit.fontawesome.com/c81ad1f5fc.js" crossorigin="anonymous"></script>
+      .line {
+        text-align: center;
+      }
+    </style>
+    <link rel="stylesheet" href="src/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homework6</title>
+    <script
+      src="https://kit.fontawesome.com/c81ad1f5fc.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <script></script>
 
-</head>
-<body>
-    <script>
-        
-        
-    </script>
-   
-   <div id="ground">
-        <nav>
-            <ul>
-            <div class="link">
+    <div id="ground">
+      <nav>
+        <ul>
+          <div class="link">
             <li><a href="index.html">Home</a></li>
             <li><a href="../homework6/pages/product.html">Product</a></li>
             <li><a href="pages/contact.html">contact</a></li>
             <li><a href="pages/about.html">About</a></li>
-            <li><a href="../homework6/pages/signup.html">Signup</a></li>
+            <li><a href="pages/signup.html">Signup</a></li>
             <li><a href="pages/login.html">Login</a></li>
-            </div>
-            </ul>
-        </nav>
-    <div class="big-div">
-    
-    <div class="home1">
+          </div>
+        </ul>
+      </nav>
+
+      <div class="home1">
         <h1 id="African"><b>Taste The Raw Goodness Of African</b></h1>
-    <div class="veg"><img src="images/wheat.png" alt="width 200px" height="300px">
-        <button id="display"> <a href="pages/product.html">Explore our products</a></button>
-    </div>
-    </div>
-     
-    <p> African food is organic plant-based with little meat, and fish often added for flavour.
-    Traditional African dishes typically have fish, meat, starchy foods, and a wide variety of herbs and spices.
-    Many African cuisines use a combination of locally available cereal grains, fruits, vegetables, meat, and milk products.
-    Popular African foods include palm oil, rice, cassava, yams, groundnuts, beans, coffee, and coconut.
-    African foods are unrefined natural foods, including whole grains, legumes, roots and tubers, 
-      and a variety of fruits, seeds, nuts, and vegetables
-    </p>
-
-
-    <h1 id="Goodness">Browse Through The African Goodness</h1>
-      <div class="dddd"> 
-       <div class="images"><img id="okro" src="images/okro.jpg" alt="" width="600px" height="300px">
-        <h1>African okro</h1>
-       </div>
-    
-      
-      <div class="images">
-        <img id="vegetables" src="images/pepper.avif" alt="" width=" 400px" height="300px">
-        <h1>African pepper</h1>
+        <div class="veg">
+          <img src="images/wheat.png" alt="width 200px" height="300px" />
+          <button id="display">
+            <a href="pages/product.html">Explore our products</a>
+          </button>
+        </div>
       </div>
-      
-      <div class="images">
-        <img id="vege" src="images/veg.jpg" alt="" width="500px" height="300px">
-        <h1>African vegetables</h1>
-    </div>
-    
-      <div class="images">
-        <img id="veges" src="images/cabbage.jpg" alt="" width="500px" height="300px">
-        <h1> African cabbage</h1>
-    </div>
-    </div>
 
-    <!-- Another set of images added -->
-    
-    <div id="learn" class="dddd"  >
+      <p>
+        African food is organic plant-based with little meat, and fish often
+        added for flavour. Traditional African dishes typically have fish, meat,
+        starchy foods, and a wide variety of herbs and spices. Many African
+        cuisines use a combination of locally available cereal grains, fruits,
+        vegetables, meat, and milk products. Popular African foods include palm
+        oil, rice, cassava, yams, groundnuts, beans, coffee, and coconut.
+        African foods are unrefined natural foods, including whole grains,
+        legumes, roots and tubers, and a variety of fruits, seeds, nuts, and
+        vegetables
+      </p>
+
+      <h1 id="Goodness">Browse Through The African Goodness</h1>
+      <div class="big-div">
         <div class="images">
-          <img id="okro" src="images/okro leave.jpg" alt="" width="400px" height="300px">
+          <img
+            id="okro"
+            src="images/okro.jpg"
+            alt=""
+            width="600px"
+            height="300px"
+          />
+          <h1>African okro</h1>
+        </div>
+
+        <div class="images">
+          <img
+            id="vegetables"
+            src="images/pepper.avif"
+            alt=""
+            width=" 400px"
+            height="300px"
+          />
+          <h1>African pepper</h1>
+        </div>
+
+        <div class="images">
+          <img
+            id="vege"
+            src="images/veg.jpg"
+            alt=""
+            width="500px"
+            height="300px"
+          />
+          <h1>African vegetables</h1>
+        </div>
+
+        <div class="images">
+          <img
+            id="veges"
+            src="images/cabbage.jpg"
+            alt=""
+            width="500px"
+            height="300px"
+          />
+          <h1>African cabbage</h1>
+        </div>
+      </div>
+
+      <!-- Another set of images added -->
+
+      <div id="learn" class="big-div">
+        <div class="images">
+          <img
+            id="okro"
+            src="images/okro leave.jpg"
+            alt=""
+            width="400px"
+            height="300px"
+          />
           <h1>African okro-plant</h1>
         </div>
-      
+
         <div class="images">
-          <img id="vegetables" src="images/wheat-seeds.jpg" alt="" width=" 500px" height="300px">
+          <img
+            id="vegetables"
+            src="images/wheat-seeds.jpg"
+            alt=""
+            width=" 500px"
+            height="300px"
+          />
           <h1>African wheat</h1>
         </div>
-        
+
         <div class="images">
-          <img id="vege" src="images/maize.jpg" alt="" width="500px" height="300px">
+          <img
+            id="vege"
+            src="images/maize.jpg"
+            alt=""
+            width="500px"
+            height="300px"
+          />
           <h1>African maize</h1>
         </div>
-      
+
         <div class="images">
-          <img id="veges" src="images/millet.jpg" alt="" width="500px" height="300px">
+          <img
+            id="veges"
+            src="images/millet.jpg"
+            alt=""
+            width="500px"
+            height="300px"
+          />
           <h1>African millet</h1>
         </div>
       </div>
     </div>
-      <button id="leann">Click to load more </button>
+    <button id="leann">Click to load more</button>
     <div class="footer">
+      <h2>NEWSLETTERS</h2>
 
-    <h2>NEWSLETTERS</h2>
-    
-    <div>
+      <div>
         <form action="">
-         <label for="">Email</label>
-         <input type="email" name="" id="" placeholder="Email">
+          <label for="">Email</label>
+          <input type="email" name="" id="" placeholder="Email" />
         </form>
+      </div>
+      <footer>
+        <hr />
+        <h3>please follow us on our handles🎯🎯🎯</h3>
+        <div><i class="fa-brands fa-instagram"></i></div>
+        <div><i class="fa-brands fa-youtube"></i></div>
+        <div><i class="fa-brands fa-twitter"></i></div>
+        <div><i class="fa-brands fa-facebook"></i></div>
+        <p>&copy; 2024 Our Website</p>
+      </footer>
     </div>
-    <footer>
-        <hr>
-    <h3>please follow us on our handles🎯🎯🎯 </h3>
-<div><i class="fa-brands fa-instagram"></i></div>
-<div><i class="fa-brands fa-youtube"></i></div>
-<div><i class="fa-brands fa-twitter"></i></div>
-<div><i class="fa-brands fa-facebook"></i></div>
-    </footer>
-</div>
-</div>
+    <!-- </div> -->
 
-
-<script src="src/index.js"></script>
-    
-</body>
+    <script src="src/index.js"></script>
+  </body>
 </html>
