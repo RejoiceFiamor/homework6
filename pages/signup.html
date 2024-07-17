@@ -2,27 +2,53 @@
 <html lang="en">
 <head>
   <style>
-    body{
-      background-color: chocolate;
-    
-    }
+     body{
+      
+      background-image: url("../images/millet.jpg");   /* Path to my image */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;                /*  Center the image horizontally */
+  font-size: 30px;
+  /* General styles for all devices */
+  font-size: 16px; /* Example general style */
+}
 
-    li{
-      list-style: none;
-    
+/* Styles for smaller screens (mobile) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Example mobile-specific style */
+  }
+}
 
-    }
-    .link{
-        display: flex;
-        flex-wrap:wrap;
-        justify-content: space-evenly; 
-    
-    }
+/* Styles for larger screens (desktop) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px; /* Example desktop-specific style */
+  }
+}
+.navigation {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
 
-    .link li a{
-      text-decoration: none;
-        }
+/* Style the list items */
+.navigation li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add space between list items */
+}
 
+/* Style the links */
+.navigation a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Make links bolder */
+}
+
+/* Style the links on hover */
+.navigation a:hover {
+  color: #007bff; /* Change link color on hover (blue) */
+}
     .font{
       text-align: center;
       font: 2em sans-serif;
@@ -37,6 +63,8 @@
       /* height: 350px; */
       display: flex;
       flex-wrap: wrap;
+      color: rgb(8, 168, 80);
+
    }
 
    .formt{
@@ -44,6 +72,7 @@
     justify-content: flex-start;
     text-align: left;
     margin-bottom: 10px;
+    
    }
 
    .formt label{
@@ -63,28 +92,24 @@
    }
 
 
-   /* .brand{
-    margin-bottom: ;
- 
-   } */
   
   
 </style>
+<link rel="stylesheet" href="../src/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title><script src="https://kit.fontawesome.com/c81ad1f5fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <ul>
-      <div class="link">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="signup.html">Signup</a></li>
-        <li><a href="login.html">Login</a></li>
-      </div>
-    </ul>
+  <ul class="navigation">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="product.html">Product</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="signup.html">Signup</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
+    
      <!-- <form action="Name ">You</form -->
     
      <div class="font">
@@ -131,15 +156,28 @@
        </form>
      </div>
      
-     <footer class="brand">
-     <h3>please follow us on our handles🎯🎯🎯</h3>
-       <div><i class="fa-brands fa-instagram"></i></div>
-       <div><i class="fa-brands fa-youtube"></i></div>
-       <div><i class="fa-brands fa-twitter"></i></div>
-       <div><i class="fa-brands fa-facebook"></i></div>
-     </footer>
+
+<footer>
+  <h3>Please follow us on our handles </h3>
+    <div class="social-links">
+  <a href="https://www.tiktok.com/@yaabhaby99">
+    <i class="fa-brands fa-tiktok"></i>
+  </a>
+  <a href="https://www.callbell.eu/eu/">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+   <a href="https://www.youtube.com/@Rejoice Fiamor Mawusi ">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+    <a href="https://www.facebook.com/your_facebook_page">
+        <i class="fa-brands fa-facebook"></i>
+     </a>
+    </div>
+            <p>&copy; 2024 Our Website</p>
+    </footer>
+
      
     
-    
+    <script src="../src/signup.js"></script>
 </body>
 </html>

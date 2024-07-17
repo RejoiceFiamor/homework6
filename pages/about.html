@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
     <style>
-        .link{
-            background-color:aqua ;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+    
         body {
   font-family: sans-serif;
   margin: 0;
@@ -22,26 +17,10 @@ header {
   align-items: center;
 }
 
-h1, h2, h3 {
+  h1, h2, h3 {
   margin: 0;
 }
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-nav a {
-  text-decoration: none;
-  color: #333;
-}
-
+ 
 .hero {
   padding: 40px;
   text-align: center;
@@ -64,25 +43,45 @@ nav a {
   cursor: pointer;
 }
 
-.about {
-  padding: 40px;
+.navigation {
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+/* Style the list items */
+.navigation li {
+  display: inline-block; /* Display list items horizontally */
+  margin-right: 20px; /* Add space between list items */
+}
+
+/* Style the links */
+.navigation a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+  font-weight: bold; /* Make links bolder */
+}
+
+/* Style the links on hover */
+.navigation a:hover {
+  color: #295c92; /* Change link color on hover (blue) */
+}
+
+
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
 </head>
 <body>
-    <ul>
-        <div class="link">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="product.html">Product</a></li>
-        <li><a href="contact.html">contact</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="signup.html">Signup</a></li>
-        <li><a href="login.html">Login</a></li>
-    </div>
-    </ul>
+    <ul class="navigation">
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="product.html">Product</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="signup.html">Signup</a></li>
+  <li><a href="login.html">Login</a></li>
+</ul>
     <h1>About Us Page</h1>
     <div>
         <form action="">
@@ -90,13 +89,6 @@ nav a {
         </form>
     </div>
     <h1>Our Website</h1>
-    <!-- <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav> -->
   </header>
   <main>
     <section class="hero">
