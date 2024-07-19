@@ -25,7 +25,7 @@
     font-size: 18px;
   }
 }
-  
+/*   
 .navigation {
   list-style: none;
   margin: 0; 
@@ -48,6 +48,32 @@
 /* the links on hover */
 .navigation a:hover {
   color: #007bff; 
+} */
+
+ .navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: row ;
+  align-items: flex-start; 
+}
+
+.navigation li {
+  margin-bottom: 10px; 
+}
+
+.navigation a {
+  color: #333; 
+  text-decoration: none; 
+  padding: 10px 15px;
+  display: block; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+.navigation a:hover {
+  color: #007bff;
+  background-color: #f2f2f2; 
 }
 
     .contact-us {

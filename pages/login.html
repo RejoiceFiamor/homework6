@@ -8,7 +8,23 @@
             background-repeat: no-repeat;
             background-size: cover;
             font-size: 30px;
-        }
+         /* General styles for all devices */
+  font-size: 16px; 
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
         /* .link{
             background-color:aqua ;
             display: flex;
@@ -38,6 +54,7 @@
 }
 
 .navigation a:hover {
+  color: #007bff;
   background-color: #f2f2f2; 
 }
 
@@ -112,6 +129,7 @@ footer i {
 /*  the social media icons on hover (optional) */
 footer i:hover {
   color: #007bff; /* Blue color on hover */
+  background-color: #f2f2f2; 
 }
     </style>
     <meta charset="UTF-8">
@@ -148,11 +166,21 @@ footer i:hover {
 </div>
 <footer>
   <hr>
-  <h3>Please follow us on our handles</h3>
-  <div><i class="fa-brands fa-instagram"></i></div>
-  <div><i class="fa-brands fa-youtube"></i></div>
-  <div><i class="fa-brands fa-twitter"></i></div>
-  <div><i class="fa-brands fa-facebook"></i></div>
+
+  <h3>Please follow us on our handles🎯🎯 </h3>
+  <div class="social-links">
+<a href="https://www.tiktok.com/@yaabhaby99">
+  <i class="fa-brands fa-tiktok"></i>
+</a>
+<a href="https://www.callbell.eu/eu/">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+ <a href="https://www.youtube.com/@Rejoice Fiamor Mawusi ">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+  <a href="https://www.facebook.com/your_facebook_page">
+      <i class="fa-brands fa-facebook"></i>
+   </a>
   <p>&copy; 2024 Our Website</p>
   </footer>
 

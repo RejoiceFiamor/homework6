@@ -2,20 +2,61 @@
 <html lang="en">
   <head>
     <style>
+      body{
+        background-color: bisque;
+        font-size: 16px;
+         /* General styles for all devices */
+        }
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
       .dddd {
         padding: 3%;
       }
-      .link {
+      /* .link {
         background-color: aqua;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         text-decoration: none;
-      }
+      } */
+      .navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: row ;
+  align-items: flex-start; 
+}
 
-      body {
-        background-color: bisque;
-      }
+.navigation li {
+  margin-bottom: 10px; 
+}
+
+.navigation a {
+  color: #333; 
+  text-decoration: none; 
+  padding: 10px 15px;
+  display: block; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+.navigation a:hover {
+  color: #007bff;
+  background-color: #f2f2f2; 
+}
+
 
       .big-div {
         display: flex;
@@ -30,10 +71,12 @@
         margin: 0 auto;
         border: 6px solid black;
         width: 400px;
-        height: 400px;
+        /* height: 400px; */
         padding: 5%;
         background-color: cadetblue;
+        
       }
+
 
       .images {
         border: 6px solid black;
@@ -73,6 +116,11 @@
       .line {
         text-align: center;
       }
+
+  
+      .veg img{
+        height: 300px;
+      }
     </style>
     <link rel="stylesheet" href="src/style.css" />
     <meta charset="UTF-8" />
@@ -89,7 +137,7 @@
     <div id="ground">
       <nav>
         <ul>
-          <div class="link">
+          <div class="navigation">
             <li><a href="index.html">Home</a></li>
             <li><a href="../homework6/pages/product.html">Product</a></li>
             <li><a href="pages/contact.html">contact</a></li>
@@ -103,10 +151,10 @@
       <div class="home1">
         <h1 id="African"><b>Taste The Raw Goodness Of African</b></h1>
         <div class="veg">
-          <img src="images/wheat.png" alt="width 200px" height="300px" />
           <button id="display">
             <a href="pages/product.html">Explore our products</a>
           </button>
+          <img src="images/wheat.png" alt=""  />
         </div>
       </div>
 

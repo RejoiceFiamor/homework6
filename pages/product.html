@@ -7,17 +7,32 @@
         }
         h1{
             text-align: center;
-            background-color: rgb(10, 227, 227);
-            
-        }
-        .gin{
-            text-align: center;
-            background-color: rgb(24, 155, 111);
-            border: 7px solid black;
+          }
 
-        }
+          h1:hover{
+            color: #007bff;
+            /* background-color: #f2f2f2; */
+          }
 
-        .link{
+        .gin {
+                  margin: 20px auto;  
+                  border-radius: 5px; 
+                  overflow: hidden; 
+                  text-align: center;
+                  /* border: 4px double; */
+                  font-size: 30px;
+                }
+                
+                .gin img {
+                  width: 40%; 
+                  height: auto;
+                 border: 4px double;
+                  font-size: 30px;
+                  
+                }
+
+
+        /* .link{
              background-color: aqua;
              display: flex;
              flex-wrap: wrap;  
@@ -25,7 +40,32 @@
              border: 3px solid rgb(41, 26, 29);
 
 
-            }
+            } */
+            .navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: row ;
+  align-items: flex-start; 
+}
+
+.navigation li {
+  margin-bottom: 10px; 
+}
+
+.navigation a {
+  color: #333; 
+  text-decoration: none; 
+  padding: 10px 15px;
+  display: block; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+.navigation a:hover {
+    color: #007bff;
+  background-color: #f2f2f2; 
+}
 
         /* h2{
             font: 2em bolder;
@@ -57,10 +97,10 @@
       font-weight: 300;
       gap: 30pt;
       padding: 20pt 30pt;
-            
-
-
-         }
+     }
+     .text{
+        display: block;
+     }
         
         .images{
             text-align: center;
@@ -71,12 +111,26 @@
         
 
     </style>
+    <link rel="stylesheet" href="../src/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product</title><script src="https://kit.fontawesome.com/c81ad1f5fc.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <ul>
+        <nav>
+            <div class="navigation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="login.html">Login</a></li>
+    </div>
+        </nav>
+      </ul>
+      
+    <!-- <ul>
         <nav>
             <div class="link">
             <li><a href="../index.html">Home</a></li>
@@ -87,9 +141,14 @@
             <li><a href="pages/login.html">Login</a></li>
             </div>
         </nav>
-    </ul>
+    </ul> -->
 
-     <div class="gin"><img src="../images/gin.jpg" alt="" width="500px" height="300px"></div>
+     <!-- <div class="gin">
+                <img src="../images/gin.jpg" alt="" width="500px" height="300px">
+            </div> -->
+               <div class="gin">
+                  <img src="../images/gin.jpg" alt="Gin Image">
+                </div>
 
      <h1>OUR RAW FOOD PRODUCT</h1>
 
@@ -100,19 +159,19 @@
     <div class="images">
         <img src="../images/cocoyam.jpg" alt="" width="400px" height="300px">
     </div>
-        <h2>African cocoyam</h2>
-    The health benefits of eating cocoyam includes improving the chances of dietary success, supporting digestive health,
+        <h2 id="africa">African cocoyam</h2>
+    <p class="text">The health benefits of eating cocoyam includes improving the chances of dietary success, supporting digestive health,
      a good source of carbohydrate, improving metabolic efficiency and nutrient absorption, strengthening immune function
      and supporting blood health.Cocoyam, which is the thick, tuber stalk of the Cocoyam plant is an extremely important 
      part of global cuisines and diets, as it has been for thousands of years. The health benefits of eating cocoyam  includes
-     providing strength for good aerobic exercise, improving heart and bone health, improving enzyme function and fighting anemia.
+     providing strength for good aerobic exercise, improving heart and bone health, improving enzyme function and fighting anemia.</p>
     </div>
     
     <div class="product">
         <div class="images">
              <img src="../images/plantain.jpg" alt="" width="400px" height="300px">
         </div>
-        <h2>African plantain</h2>
+        <h2 id="money">African plantain</h2>
         A plantain to the untrained eye could easily be mistaken for a banana. In fact, it belongs to Musaceae, 
         the banana family of plants, and it's closely related to the common banana. Believed to be native to Southeast Asia, 
         plantains are grown in tropical regions around the world and in a variety of cuisines. Unripe plantains are green 
@@ -218,6 +277,7 @@
         <p>&copy; 2024 Our Website</p>
      </footer>
     </div>
+    <script src="../src/product.js"></script>
    
    
 
