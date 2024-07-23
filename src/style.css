@@ -1,0 +1,118 @@
+/* .mylogo{
+        display: flex;
+        -ms-flex-align: end;
+        width: 7px;
+        height: auto;
+    } */
+
+    .mylogo {
+  width: 100px; /* Adjust width as needed */
+  height: auto;
+  margin: 10px auto;
+  text-align: end;
+  border-radius: 5px; /* Add a subtle rounded border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a light shadow */
+  float: right;
+}
+
+.mylogo img {
+  display: block; 
+  max-width: 100%; 
+  position: relative;
+  
+}
+
+
+/* about us page style */
+
+#image{
+  display: block;
+  max-width: 100%;  
+  margin: 0 auto;  
+  border-radius: 5px;  
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+  
+}
+
+#image{
+    width:10px;
+    height: auto;
+}
+
+#image > *{
+    text-align: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  margin: 1rem 0;
+}
+h2{
+  font-size: 1.5rem;
+}
+
+h3{
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: #e8e7e9;
+  background-color: rgb(127, 255, 0);
+}
+
+/* Specific Styles */
+
+.about {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(170, 58, 58, 0.1);
+  margin: 2rem auto;
+  max-width: 700px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; 
+}
+
+.about:hover {
+  color: #3a1f1f;
+  background-color: #e8e8e8; 
+}
+
+/* .about {
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  max-width: 700px;
+} */
+.commitment-item {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+.commitment-item::after{
+  content: ":";
+  margin-right: 0.5rem;
+}
+.raw-food-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+#shop {
+  text-align: center;
+  margin-top: 1rem;
+}
+#shop b {
+  font-weight: bold;
+}
