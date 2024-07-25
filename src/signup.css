@@ -1,0 +1,109 @@
+ body{
+      background-image: url("../images/millet.jpg");  
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-size: 30px;               
+  /* General styles for all devices */
+  font-size: 16px; 
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  display: flex;
+  flex-direction: row ;
+  align-items: flex-start; 
+}
+
+.navigation li {
+  margin-bottom: 10px; 
+  float: right;
+}
+
+.navigation a {
+  color: #333; 
+  text-decoration: none; 
+  padding: 10px 15px;
+  display: block; 
+  transition: background-color 0.2s ease-in-out; 
+}
+
+.navigation a:hover {
+  color: #007bff;
+  background-color: #f2f2f2; 
+}
+
+
+    .font{
+      text-align: center;
+      font: 2em sans-serif;
+      border-radius: 10pt;
+      line-height: 25pt;
+      font-weight: 100;
+      border: 4px double;
+      font-size: 30px;
+      margin: auto;
+      padding: 20px;
+      width: 30%;
+      /* height: 350px; */
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+   .formt{
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 10px;
+    
+   }
+
+   .formt label{
+    font-size: 22px;
+    font-weight: bold
+   }
+
+   .formt > *{
+    display:block;
+    width: 50%;
+
+   }
+   .submit{
+    text-align: center;
+    background-color: rgb(71, 81, 99);
+    padding: 2%;
+    border: 3px solid chocolate
+   }
+
+   .mylogo {
+  width: 100px; 
+  height: auto;
+  margin: 10px auto;
+  text-align: end;
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  float: right;
+}
+
+.mylogo img {
+  display: block; 
+  max-width: 100%; 
+  position: relative;
+  
+}
